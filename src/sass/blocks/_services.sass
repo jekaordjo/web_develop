@@ -1,0 +1,82 @@
+.services
+	min-height: 1414px
+	padding-top: 175px
+	padding-bottom: 125px
+	background-color: $bg_blocks_color
+	&_title
+		@include title
+	&_descr
+		@include descr
+	&_wrap	
+		display: flex
+		justify-content: space-between
+		margin-top: 112px
+		flex-wrap: wrap
+	&_item
+		margin-bottom: 30px
+		padding-top: 56px
+		min-height: 438px
+		width: 370px
+		background-color: #fff
+		&_icon
+			width: 56px
+			height: 62px
+			margin: 0 auto
+			background: url('../img/services_ico.png') center center/cover no-repeat
+		&_title
+			margin-top: 37px
+			color: $menu_color
+			font-weight: 400
+			font-size: 20px
+			text-align: center
+		&_descr
+			margin-top: 26px
+			margin-left: 50px
+			margin-right: 50px
+			color: $menu_color
+			font-weight: 400
+			font-size: 15px
+			line-height: 25px
+			text-align: center
+		&_button
+			display: block
+			margin: 45px auto 0 auto
+			width: 150px
+			height: 55px
+			cursor: pointer
+			color: $menu_color
+			font-weight: 600
+			font-size: 20px
+			text-transform: uppercase
+			background-color: transparent
+			border: 2px solid
+			&:hover 
+				color: #fff 
+				background-color: $hover_color
+
+@media (max-width: 1200px)
+	.services
+		min-height: 1300px
+		padding-top: 75px
+		padding-bottom: 55px
+		&_wrap
+			justify-content: space-around
+			margin-top: 60px
+		&_item
+			margin: 0px auto 20px auto
+			padding-top: 56px 
+			width: 290px
+			&_title
+				margin-top: 17px
+				font-size: 20px
+			&_descr
+				margin-top: 16px
+				margin-left: 30px
+				margin-right: 30px
+				font-size: 15px
+
+@media (max-width: 991px)
+	.services
+		min-height: 950px
+		&_descr
+			display: none

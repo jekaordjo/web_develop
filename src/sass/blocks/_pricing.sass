@@ -1,0 +1,102 @@
+.pricing
+	min-height: 1142px
+	padding-top: 125px
+	padding-bottom: 125px
+	background-color: #f0f1f1
+	&_title
+		@include title
+	&_descr
+		@include descr
+	&-item_wrapper
+		display: flex
+		justify-content: space-between
+	&-item
+		margin-top: 125px
+		padding-top: 48px
+		padding-right: 95px
+		padding-bottom: 63px
+		padding-left: 95px
+		width: 370px
+		height: 667px
+		background: url('../img/pricing_item_bg.png') no-repeat
+		background-color: #fff
+		transition: 0.5s all
+		&:hover
+			box-shadow: 3px 3px 20px $hover_color
+		&_content
+			text-align: center
+		&_title
+			font-size: 25px
+			font-weight: 400
+			color: #fff
+		&_descr
+			margin-top: 37px
+			font-size: 17px
+			font-weight: 400
+			color: #fff
+			display: flex
+			&_val
+				font-size: 25px
+				margin-top: 8px
+			&_pric
+				font-size: 50px
+			&_term
+				margin-top: 28px
+		&_main			
+			margin-top: 116px
+			text-align: center
+			font-size: 17px
+			font-weight: 300
+		&_main hr
+			background-color: #e8e8e8
+			margin-top: 14px
+			margin-bottom: 37px
+			border-bottom: none
+		&_footer
+			margin-top: 30px
+	&_button
+			display: block
+			width: 180px
+			height: 60px
+			cursor: pointer
+			color: $menu_color
+			font-weight: 600
+			font-size: 20px
+			text-transform: uppercase
+			background-color: transparent
+			border: 2px solid
+			&:hover 
+				color: #fff 
+				background-color: $hover_color
+
+@media (max-width: 1200px)
+	.pricing
+		min-height: 800px
+		padding-top: 80px
+		padding-bottom: 80px
+		background-color: #f0f1f1
+		&-item_wrapper
+			display: flex
+			justify-content: space-around
+		&-item
+			margin-top: 85px
+			padding-top: 28px
+			padding-right: 60px
+			padding-bottom: 33px
+			padding-left: 60px
+			width: 300px
+			&:hover
+				box-shadow: 3px 3px 15px $hover_color
+
+@media (max-width: 991px)
+	.pricing
+		min-height: 800px
+		padding-top: 80px
+		padding-bottom: 80px
+		background-color: #f0f1f1
+		&_descr
+			display: none
+		&-item_wrapper
+			display: flex
+			justify-content: space-around
+			flex-wrap: wrap

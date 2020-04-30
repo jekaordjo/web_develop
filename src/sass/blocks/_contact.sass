@@ -1,0 +1,93 @@
+.contact
+	min-height: 1255px
+	padding-top: 125px
+	padding-bottom: 125px
+	background: url('../img/contact_bg.png') center center/cover no-repeat
+	background-color: #000
+	color: $title_color
+	&_title
+		@include title
+		color: $title_color
+	&_descr
+		@include descr
+		color: $title_color
+	&-item_wrapp
+		margin-top: 100px
+		margin-left: 100px
+		margin-right: 100px
+		display: flex
+		justify-content: space-between
+	&-item
+		text-align: center
+		&_ico
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 105px
+			height: 105px
+			background-color: #3949ab
+			border-radius: 100%
+			margin: 0 auto
+		&_descr
+			margin-top: 36px
+			font-size: 20px
+			line-height: 28px
+			font-weight: 600
+	&-feed-form
+		margin-top: 80px
+		margin-left: 70px
+		margin-right: 70px
+		&_fields
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+		& input
+			height: 84px
+			width: 500px
+			padding-left: 21px
+			border-radius: 10px
+			font-size: 20px
+			font-weight: 600
+		& textarea
+			margin-top: 33px
+			height: 323px
+			width: 1031px
+			padding-top: 21px
+			padding-left: 21px
+			border-radius: 10px
+			font-size: 20px
+			font-weight: 600
+		&-button_submit
+			display: block
+			margin-top: 33px
+			margin-left: auto
+			margin-right: 0
+			height: 70px
+			width: 220px
+			border-radius: 10px
+			cursor: pointer
+			font-size: 20px
+			font-weight: 700
+			&:hover
+				color: $title_color
+				background-color: $hover_color
+
+@media (max-width: 991px)
+	.contact
+		&_descr
+			display: none
+		&-item_wrapp
+			justify-content: center
+			flex-wrap: wrap
+		&-item
+			margin-top: 10px
+
+@media (max-width: 575px)
+	.contact
+		&-feed-form
+			& input
+				height: 75px
+				width: 175px
+				font-size: 15px
+			&-button_submit
+				width: 180px

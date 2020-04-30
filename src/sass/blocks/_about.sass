@@ -1,0 +1,74 @@
+.about
+	min-height: 672px
+	padding-top: 125px
+	padding-bottom: 125px
+	&_title
+		@include title
+	&_descr
+		@include descr
+	&_wrap
+		margin-top: 115px
+		display: flex
+		justify-content: space-between
+	&_item
+		margin-right: 145px
+		text-align: center
+		&_title
+			color: $menu_color
+			font-weight: 600
+			font-size: 20px
+		&_descr
+			color: $menu_color
+			font-weight: 400
+			font-size: 15px
+			line-height: 22px
+		&:first-child
+			margin-left: 60px
+		&:last-child
+			margin-right: 55px
+		&_title
+			margin-top: 40px
+		&_descr
+			margin-top: 25px
+
+@media (max-width: 1200px)
+	.about
+		min-height: 400px
+		padding-top: 50px
+		padding-bottom: 50px
+
+@media (max-width: 991px)
+	.about
+		&_descr
+			display: none
+
+@media (max-width: 767px)
+	.about
+		padding-top: 25px
+		padding-bottom: 25px
+		&_wrap
+			margin-top: 5px
+			display: block
+			text-align: center
+		&_item
+			margin: 0 auto
+			margin-top: 20px
+			&:first-child
+				margin-top: 25px
+				margin-left: 0
+			&:last-child
+				margin-top: 20px
+				margin-right: 0
+			&_title
+				color: $menu_color
+				font-weight: 600
+				font-size: 20px
+			&_descr
+				color: $menu_color
+				font-weight: 400
+				font-size: 15px
+				line-height: 22px
+			&_title
+				margin-top: 15px
+			&_descr
+				margin-top: 5px

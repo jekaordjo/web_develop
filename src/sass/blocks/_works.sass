@@ -1,0 +1,115 @@
+.works
+	min-height: 1612px
+	padding-top: 125px
+	padding-bottom: 135px
+	background-color: #fff
+	&_title
+		@include title
+	&_descr
+		@include descr
+	&_tabs
+		margin-top: 115px
+		list-style-type: none
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-bottom: 0
+		padding-left: 0
+	&_tab
+		width: 180px
+		height: 50px
+		border: 2px solid $hover_color
+		color: $menu_color
+		font-size: 20px
+		font-weight: 400
+		text-transform: uppercase
+		text-align: center
+		line-height: 45px
+		margin: 0 5px
+		cursor: pointer
+		transition: 0.5s all
+		&:hover
+			box-shadow: 3px 3px 20px $hover_color
+			border: none
+		&_active
+			color: #ffffff
+			background-color: $hover_color
+			border: none
+	&_catalog_content
+		margin-top: 120px
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&_catalog-item
+		position: relative
+		overflow-y: hidden
+		margin-bottom: 30px
+		transition: .5s
+		&-info
+			height: 374px
+			width: 370px
+			position: absolute
+			transform: translateY(calc(100% - -1px))
+			bottom: 0
+			background: rgba(0,0,0,.66)
+			padding: 150px 24px 18px
+			color: #fff
+			// transition: .1s
+		&-title
+			display: flex
+			align-items: center
+			justify-content: center
+			min-height: 45px
+			text-align: center
+			font-size: 18px
+			font-weight: 500
+		&:hover .works_catalog-item-info
+			transform: translateY(0)
+	&_catalog-item img
+		width: 370px
+		height: 370px
+	&_catalog_button
+			display: block
+			margin: 100px auto 0 auto
+			width: 220px
+			height: 70px
+			cursor: pointer
+			color: $menu_color
+			font-weight: 600
+			font-size: 20px
+			text-transform: uppercase
+			background-color: transparent
+			border: 2px solid
+			&:hover 
+				color: #fff 
+				background-color: $hover_color
+
+@media (max-width: 1200px)
+	.works
+		min-height: 800px
+		padding-top: 80px
+		padding-bottom: 80px
+		&_catalog_content
+			display: flex
+			justify-content: space-around
+		&_catalog-item img
+			width: 270px
+			height: 270px
+			&:hover
+				filter: brightness(50%)
+
+@media (max-width: 991px)
+	.works
+		min-height: 800px
+		&_descr
+			display: none
+
+@media (max-width: 767px)
+	.works
+		&_tab
+			font-size: 12px
+
+@media (max-width: 369px)
+	.works
+		&_tab
+			font-size: 10px

@@ -1,0 +1,179 @@
+.blog
+	min-height: 1870px
+	padding-top: 125px
+	padding-bottom: 125px
+	background-color: #e4fdf9
+	&_title
+		@include title
+	&_descr
+		@include descr
+	&-item_wrapp
+		margin-top: 125px
+	&-item		
+		display: flex
+		justify-content: space-between
+		&_img
+			width: 570px
+			height: 400px
+		&_post_right
+			padding-top: 60px
+			margin-right: 130px
+		&_post_left
+			margin-left: 30px
+			margin-right: 100px
+			padding-top: 60px
+		&_post
+			&_title
+				display: block
+				font-size: 25px
+				font-weight: 600
+				cursor: pointer
+				&:hover
+					color: $hover_color
+			&_dates
+				margin-top: 27px
+				display: flex
+				justify-content: start
+			&_date
+				font-size: 17px
+				font-weight: 600
+				&_calendar
+					display: inline-block
+					width: 17px
+					height: 17px
+			&_cat
+				font-size: 17px
+				font-weight: 600
+				margin-left: 40px
+			&_text
+				margin-top: 28px
+				font-size: 15px
+				font-weight: 400
+				line-height: 22px
+	&_button
+		display: block
+		margin: 125px auto 0 auto
+		width: 220px
+		height: 70px
+		cursor: pointer
+		color: $menu_color
+		font-weight: 600
+		font-size: 20px
+		text-transform: uppercase
+		background-color: transparent
+		border: 2px solid
+		&:hover 
+			color: #fff 
+			background-color: $hover_color
+
+@media (max-width: 1200px)
+	.blog
+		min-height: 300px
+		padding-top: 30px
+		padding-bottom: 30px
+		background-color: #e4fdf9
+		&-item_wrapp
+			margin-top: 45px
+		&-item
+			&_img
+				width: 525px
+				height: 370px
+			&_post_right
+				margin-left: 30px
+		&_button
+			margin-top: 35px
+
+@media (max-width: 991px)
+	.blog
+		&_descr
+			display: none
+		&-item
+			&_img
+				width: 365px
+				height: 255px
+			&_post_right
+				padding-top: 10px
+				margin-right: 30px
+			&_post_left
+				margin-left: 15px
+				margin-right: 30px
+				padding-top: 10px
+
+@media (max-width: 767px)
+	.blog
+		&-item
+			&_img
+				width: 220px
+				height: 195px
+			&_post_right
+				padding-top: 10px
+				margin-right: 30px
+			&_post_left
+				margin-left: 15px
+				margin-right: 30px
+				padding-top: 10px
+
+@media (max-width: 575px)
+	.blog
+		&-item
+			&_img
+				width: 220px
+				height: 195px
+			&_post_right
+				padding-top: 10px
+				margin-right: 30px
+				margin-left: 15px
+			&_post_left
+				margin-left: 15px
+				margin-right: 30px
+				padding-top: 10px
+			&_post
+				&_title
+					font-size: 20px
+				&_dates
+					margin-top: 15px
+				&_date
+					font-size: 12px	
+				&_cat
+					font-size: 12px
+					margin-left: 10px
+				&_text
+					margin-top: 10px
+					font-size: 12px
+
+@media (max-width: 499px)
+	.blog
+		&-item
+			&_img
+				margin-top: 25px
+				width: 135px
+				height: 100px
+			&_post_right
+				padding-top: 10px
+				margin-right: 30px
+				margin-left: 15px
+			&_post_left
+				margin-left: 15px
+				margin-right: 30px
+				padding-top: 10px
+			&_post
+				&_title
+					font-size: 20px
+				&_dates
+					margin-top: 15px
+				&_date
+					font-size: 12px	
+				&_cat
+					font-size: 12px
+					margin-left: 10px
+				&_text
+					margin-top: 10px
+					font-size: 12px
+
+@media (max-width: 369px)
+	.blog
+		&-item
+			&_img
+				margin-top: 55px
+				width: 115px
+				height: 90px
