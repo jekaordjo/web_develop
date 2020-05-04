@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="up">
         <div class="container">
             <div class="header_menu">
                 <div class="header_logo">
-                    <a href="#">Ваш логотип</a>
+                    <a href="#"><img src="img/logo.png" alt="logo"></a>
                 </div>
                 <nav class="nav">
                     <ul class="menu">
@@ -23,22 +23,22 @@
                             <a href="#" class="menu_link">Главная</a>
                         </li>
                         <li class="menu_item">
-                            <a href="#" class="menu_link">О нас</a>
+                            <a href="#about" class="menu_link">О нас</a>
                         </li>
                         <li class="menu_item">
-                            <a href="#" class="menu_link">Услуги</a>
+                            <a href="#services" class="menu_link">Услуги</a>
                         </li>
                         <li class="menu_item">
-                            <a href="#" class="menu_link">Портфолио</a>
+                            <a href="#works" class="menu_link">Портфолио</a>
                         </li>
                         <li class="menu_item">
-                            <a href="#" class="menu_link">Блог</a>
+                            <a href="#blog" class="menu_link">Блог</a>
                         </li>
                         <li class="menu_item">
-                            <a href="#" class="menu_link">Контакты</a>
+                            <a href="#contact" class="menu_link">Контакты</a>
                         </li>
                     </ul>
-                    <a href="#" class="nav_search"></a>                    
+                    <!-- <a href="#" class="nav_search"></a>                     -->
                 </nav>                
             </div>
             <div class="hamburger">
@@ -54,8 +54,8 @@
             <h1 class="promo_header_title">Проекты веб-разработки</h1>
             <h2 class="promo_header_title_little">Мы разрабатываем веб-проекты любой сложности</h2>
             <div class="promo_header_btn">
-                <button class="promo_header_btn_item">НАШИ УСЛУГИ</button>
-                <button class="promo_header_btn_item">Заказать СЕЙЧАС</button>
+                <a href="#services" class="promo_header_btn_item">НАШИ УСЛУГИ</a>
+                <a href="#pricing" class="promo_header_btn_item">Заказать СЕЙЧАС</a>
             </div>
             <div class="promo_header_down">
                 <img src="img/down_icon.png" alt="down">
@@ -63,7 +63,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <h2 class="about_title">О нас</h2>
             <div class="about_descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
@@ -93,7 +93,7 @@
         </div>
     </section>
     
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <div class="services_title">Our Services</div>
             <div class="services_descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
@@ -138,59 +138,59 @@
         </div>
     </section>
 
-    <section class="works">
+    <section class="works" id="works">
         <div class="container">
             <div class="works_title">Latest Works</div>
             <div class="works_descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
             <ul class="works_tabs">
-                <li class="works_tab works_tab_active"><div>ALL</div></li>
-                <li class="works_tab"><div>WEB DESIGN</div></li>
-                <li class="works_tab"><div>UI/UX DESIGN</div></li>
-                <li class="works_tab"><div>MOCKUPS</div></li>
+                <li class="works_tab mixitup-control-active" data-filter="all">ALL</li>
+                <li class="works_tab" data-filter=".web-design">WEB DESIGN</li>
+                <li class="works_tab" data-filter=".ui-ux-design">UI/UX DESIGN</li>
+                <li class="works_tab" data-filter=".mockups">MOCKUPS</li>
             </ul>
             <div class="works_catalog_content">
-                <div class="works_catalog-item">
+                <div class="works_catalog-item mix web-design">
                     <img src="img/works/watch.png" alt="pulsometr" class="works_catalog-item_img">
                     <div class="works_catalog-item-info">
-                        <div class="works_catalog-item-title">Hand Watch <br> ui/ux design</div>
+                        <div class="works_catalog-item-title">Hand Watch <br> Web disign</div>
                     </div>
                 </div>
-                <div class="works_catalog-item">
+                <div class="works_catalog-item mix mockups">
                     <img src="img/works/pass.png" alt="pass" class="works_catalog-item_img">
                     <div class="works_catalog-item-info">
-                        <div class="works_catalog-item-title">Hand Watch <br> ui/ux design</div>
+                        <div class="works_catalog-item-title">One Day Pass <br> Mockups</div>
                     </div>
                 </div>
-                <div class="works_catalog-item">
+                <div class="works_catalog-item mix web-design">
                     <img src="img/works/modal.png" alt="Modal T-shirt" class="works_catalog-item_img">
                     <div class="works_catalog-item-info">
-                        <div class="works_catalog-item-title">Hand Watch <br> ui/ux design</div>
+                        <div class="works_catalog-item-title">Modal T-shirt <br> Web disign</div>
                     </div>
                 </div>
-                <div class="works_catalog-item">
+                <div class="works_catalog-item mix mockups">
                     <img src="img/works/flask.png" alt="Flask" class="works_catalog-item_img">
                     <div class="works_catalog-item-info">
-                        <div class="works_catalog-item-title">Hand Watch <br> ui/ux design</div>
+                        <div class="works_catalog-item-title">Flask <br> Mockups</div>
                     </div>
                 </div>
-                <div class="works_catalog-item">
+                <div class="works_catalog-item mix ui-ux-design">
                     <img src="img/works/eplomost.png" alt="Eplomost" class="works_catalog-item_img">
                     <div class="works_catalog-item-info">
-                        <div class="works_catalog-item-title">Hand Watch <br> ui/ux design</div>
+                        <div class="works_catalog-item-title">Eplomost <br> ui/ux design</div>
                     </div>
                 </div>
-                <div class="works_catalog-item">
+                <div class="works_catalog-item mix ui-ux-design">
                     <img src="img/works/kitchens.png" alt="The Kitchens" class="works_catalog-item_img">
                     <div class="works_catalog-item-info">
-                        <div class="works_catalog-item-title">Hand Watch <br> ui/ux design</div>
+                        <div class="works_catalog-item-title">The Kitchens <br> ui/ux design</div>
                     </div>
                 </div>
             </div>
-            <button class="works_catalog_button">VIEW ALL</button>
+            <button class="works_catalog_button" data-filter="all">VIEW ALL</button>
         </div>
     </section>
     
-    <section class="pricing">
+    <section class="pricing" id="pricing">
         <div class="container">
             <div class="pricing_title">Pricing Plan</div>
             <div class="pricing_descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
@@ -468,7 +468,7 @@
         </div>
     </section>
     
-    <section class="blog">
+    <section class="blog" id="blog">
         <div class="container">
             <div class="blog_title">Blog</div>
             <div class="blog_descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
@@ -523,7 +523,7 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <div class="contact_title">Contact Us</div>
             <div class="contact_descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
@@ -561,7 +561,13 @@
     <section class="footer">
         <div class="footer_title"> All rights Reserved &copy; 2017</div>
     </section>
-    
+
+    <a href="#up" class="pageup">
+        <img src="icons/totop.svg" alt="totop">
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/mixitup/mixitup.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

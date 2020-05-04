@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', function () {
     'use strict';
-
+    // Slider ---------------------------------------------------
     let slideIndex = 1,
         slides = document.querySelectorAll('.slider-item'),
         dotsWrap = document.querySelector('.team-dots'),
@@ -41,5 +41,48 @@ window.addEventListener('DOMContentLoaded', function () {
             }
         }
     });
+    //----------------------------------------------------------------
+    //Hamburger-------------------------------------------------------
+    const menu = document.querySelector('.nav'),
+          menuItem = document.querySelectorAll('.menu_item'),
+          hamburger = document.querySelector('.hamburger');
 
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('hamburger_active');
+        menu.classList.toggle('nav_active');
+    });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            hamburger.classList.toggle('hamburger_active');
+            menu.classList.toggle('nav_active');
+        })
+    });
+    //--------------------------------------------------------------
+    //filter mixitup
+    let mixer = mixitup('.works_catalog_content');
+    //--------------------------------------------------------------
+    //toTop
+    let toTop = document.querySelector('.pageup');
+    window.addEventListener('scroll', function() {
+        if (pageYOffset > 899){
+            toTop.style.display = 'block';
+        }
+        if (pageYOffset < 899){
+            toTop.style.display = 'none';
+        }
+      });
+    //--------------------------------------------------------------
+
+    //scroll JQ
+    $('a[href*="#"]').on('click', function (e) {
+        e.preventDefault();
+    
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        }, 500, 'linear');
+    });
+    //--------------------------------------------------------------
 });
+
+
